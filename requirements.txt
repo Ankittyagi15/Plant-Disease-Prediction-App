@@ -1,6 +1,5 @@
 Flask
 gunicorn
-tensorflow
 Pillow
 streamlit
 pandas
