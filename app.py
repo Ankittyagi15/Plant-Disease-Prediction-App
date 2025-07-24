@@ -17,7 +17,7 @@ st.title("🌱 Plant Disease Prediction App")
 st.markdown("Enter environmental conditions to predict if the plant is **diseased** or **healthy**.")
 
 # Check if model file exists and load it
-model_path = 'plant_disease_detection_model.pkl'
+model_path = 'plant_disease_detection_model-Copy1.pk1'
 try:
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
@@ -53,28 +53,6 @@ if st.button("🔍 Predict"):
             st.error("🚨 The plant is likely to be **Diseased**.")
         else:
             st.success("✅ The plant is likely to be **Healthy**.")
-
-
-# In[ ]:
-
-
-get_ipython().system('pip freeze > requirements.txt')
-
-
-# In[ ]:
-
-
-get_ipython().system('pip install -r requirements.txt')
-
-
-# In[ ]:
-
-
-get_ipython().system('streamlit run app.py')
-
-
-# In[ ]:
-
 
 
 
